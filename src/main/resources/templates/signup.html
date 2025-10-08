@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <script src="signup.js" defer></script>
+    <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" type="module"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <form action="/api/login" method="post">
+            <h1>Sign up</h1>
+            <div class="inputbox">
+                <ion-icon name="person-outline"></ion-icon>
+                <input type="text" name="name" required >
+                <lable>Your Name</lable>
+
+            </div>
+             <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="text" name="email" required>
+                <lable>Your Emial</lable>
+
+            </div>
+             <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="text" name="password" required >
+                <lable>Your Password</lable>
+
+            </div>
+            <button>Sign up</button>
+            <div class="register">
+                <p>Already have an account</p><a href="#">login</a>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
