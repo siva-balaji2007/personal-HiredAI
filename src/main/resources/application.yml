@@ -1,0 +1,17 @@
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+spring:
+  datasource: 
+    password: sivabalaji007
+    url: jdbc:mysql://localhost:3306/signin
+    username: root
+jpa:
+  hibernate:
+    ddl-auto: update
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  show-sql: true
+  properties:
+    hibernate:
+      dialect: org.hibernate.dialect.MySQLDialect
